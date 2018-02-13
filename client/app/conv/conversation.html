@@ -5,12 +5,12 @@
 </div>
 <div class='row'>
   <div class='col-xs-4' *ngIf="type == 'base'">
-    <p>Welcome to IT Support, which handles conversation for internal IT application support. You can ask simple question like:</p>
+    <p>Welcome to DTI, which handles conversation for training offering. You can ask simple question like:</p>
       <ul>
-        <li>I could not access application AbC</li>
-        <li>How can I reset my password</li>
-        <li>what is the business process for supplier on boarding?</li>
-        <li>how to bring my ipad for work?</li>
+        <li>Necesito un curso</li>
+        <li>¿Tienen cursos sobre Big Data?</li>
+        <li>Quiero formación en seguridad informática</li>
+        <li>Quiero ser un hacker</li>
       </ul>
     <br/>
     <p>The supplier on boarding business process deployed on <a href="https://vhost001.bpm.ibmcloud.com">IBM BPM on Cloud</a> can be triggered automatically from this conversation broker for the dialog flow. To demonstrate you need an account on BPM on Cloud demo server and do the following steps:</p>
@@ -45,7 +45,7 @@
                        type="text"
                        size="60"
                        [(ngModel)]="queryString"
-                       placeholder="Send a message to Support Bot!"
+                       placeholder="Envía un mensaje al Bot de DTI!"
                        name="queryString"
                        autocomplete="off"/>
                 <button class="btn btn-primary" (click)="submit()" type="button">Enviar</button>
